@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-5xl md:text-7xl font-bold mb-6">
-            INDIAN PRISON <span className="text-orange-500">XI</span>
+            CHIN TAPAK <span className="text-orange-500">DUM DUM</span>
           </h2>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
             Redemption through Cricket. Where Second Chances Meet Championship Dreams.

@@ -12,7 +12,7 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <Shield className="h-8 w-8 text-orange-500" />
             <div>
-              <h1 className="text-2xl font-bold">Indian Prison XI</h1>
+              <h1 className="text-2xl font-bold">Chin Tapak Dum Dum</h1>
               <p className="text-sm text-gray-300">Cricket Team</p>
             </div>
           </div>

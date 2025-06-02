@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <Shield className="h-8 w-8 text-orange-500" />
               <div>
-                <h3 className="text-xl font-bold">Indian Prison XI</h3>
+                <h3 className="text-xl font-bold">Chin Tapak Dum Dum</h3>
                 <p className="text-gray-400 text-sm">Cricket Team</p>
               </div>
             </div>
@@ -20,7 +20,7 @@ const Footer = () => {
               second chances, and the transformative power of cricket.
             </p>
             <div className="text-sm text-gray-400">
-              <p>© 2024 Indian Prison XI. All rights reserved.</p>
+              <p>© 2024 Chin Tapak Dum Dum. All rights reserved.</p>
               <p>Managed by Central Prison Sports Department</p>
             </div>
           </div>
