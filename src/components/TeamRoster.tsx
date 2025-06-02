@@ -8,7 +8,7 @@ const TeamRoster = () => {
       prisonerNumber: "IP2015-001",
       position: "Captain/Batsman",
       sentence: "12 years",
-      crime: "Bank Robbery",
+      crime: "Excessive Ball Blocking",
       stats: { matches: 45, runs: 2150, wickets: 5, average: "48.9" }
     },
     {
@@ -16,7 +16,7 @@ const TeamRoster = () => {
       prisonerNumber: "IP2017-023",
       position: "Fast Bowler",
       sentence: "8 years",
-      crime: "Armed Robbery",
+      crime: "Bowling Too Fast for Umpires",
       stats: { matches: 38, runs: 245, wickets: 87, average: "18.2" }
     },
     {
@@ -24,7 +24,7 @@ const TeamRoster = () => {
       prisonerNumber: "IP2016-045",
       position: "Spinner",
       sentence: "15 years",
-      crime: "Fraud",
+      crime: "Making Batsmen Dizzy with Spin",
       stats: { matches: 42, runs: 567, wickets: 95, average: "16.8" }
     },
     {
@@ -32,7 +32,7 @@ const TeamRoster = () => {
       prisonerNumber: "IP2018-067",
       position: "Wicket Keeper",
       sentence: "6 years",
-      crime: "Theft",
+      crime: "Stealing Too Many Wickets",
       stats: { matches: 40, runs: 1234, wickets: 0, average: "31.2" }
     },
     {
@@ -40,7 +40,7 @@ const TeamRoster = () => {
       prisonerNumber: "IP2019-089",
       position: "All-rounder",
       sentence: "10 years",
-      crime: "Assault",
+      crime: "Hitting Sixes Out of Stadium",
       stats: { matches: 35, runs: 1567, wickets: 42, average: "44.8" }
     },
     {
@@ -48,7 +48,7 @@ const TeamRoster = () => {
       prisonerNumber: "IP2020-112",
       position: "Batsman",
       sentence: "7 years",
-      crime: "Burglary",
+      crime: "Refusing to Give Strike to Partners",
       stats: { matches: 30, runs: 1345, wickets: 2, average: "42.1" }
     }
   ];
