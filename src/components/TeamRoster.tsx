@@ -4,51 +4,51 @@ import PlayerCard from './PlayerCard';
 const TeamRoster = () => {
   const players = [
     {
-      name: "राजेश 'द वॉल' कुमार",
+      name: "Rajesh 'The Wall' Kumar",
       prisonerNumber: "IP2015-001",
-      position: "कप्तान/बल्लेबाज",
-      sentence: "12 साल",
-      crime: "अत्यधिक गेंद रोकना",
+      position: "Captain/Batsman",
+      sentence: "12 Years",
+      crime: "Excessive Ball Blocking",
       stats: { matches: 45, runs: 2150, wickets: 5, average: "48.9" }
     },
     {
-      name: "विक्रम 'लाइटनिंग' सिंह",
+      name: "Vikram 'Lightning' Singh",
       prisonerNumber: "IP2017-023",
-      position: "तेज गेंदबाज",
-      sentence: "8 साल",
-      crime: "अंपायरों के लिए बहुत तेज गेंदबाजी",
+      position: "Fast Bowler",
+      sentence: "8 Years",
+      crime: "Bowling Too Fast for Umpires",
       stats: { matches: 38, runs: 245, wickets: 87, average: "18.2" }
     },
     {
-      name: "सुरेश 'स्पिन किंग' पटेल",
+      name: "Suresh 'Spin King' Patel",
       prisonerNumber: "IP2016-045",
-      position: "स्पिनर",
-      sentence: "15 साल",
-      crime: "स्पिन से बल्लेबाजों को चक्कर दिलाना",
+      position: "Spinner",
+      sentence: "15 Years",
+      crime: "Making Batsmen Dizzy with Spin",
       stats: { matches: 42, runs: 567, wickets: 95, average: "16.8" }
     },
     {
-      name: "अमित 'द कीपर' शर्मा",
+      name: "Amit 'The Keeper' Sharma",
       prisonerNumber: "IP2018-067",
-      position: "विकेट कीपर",
-      sentence: "6 साल",
-      crime: "बहुत सारे विकेट चुराना",
+      position: "Wicket Keeper",
+      sentence: "6 Years",
+      crime: "Stealing Too Many Wickets",
       stats: { matches: 40, runs: 1234, wickets: 0, average: "31.2" }
     },
     {
-      name: "रवि 'बिग हिटर' गुप्ता",
+      name: "Ravi 'Big Hitter' Gupta",
       prisonerNumber: "IP2019-089",
-      position: "ऑल राउंडर",
-      sentence: "10 साल",
-      crime: "स्टेडियम से बाहर छक्के मारना",
+      position: "All Rounder",
+      sentence: "10 Years",
+      crime: "Hitting Sixes Out of Stadium",
       stats: { matches: 35, runs: 1567, wickets: 42, average: "44.8" }
     },
     {
-      name: "दीपक 'द एंकर' वर्मा",
+      name: "Deepak 'The Anchor' Verma",
       prisonerNumber: "IP2020-112",
-      position: "बल्लेबाज",
-      sentence: "7 साल",
-      crime: "साझेदारों को स्ट्राइक देने से इनकार",
+      position: "Batsman",
+      sentence: "7 Years",
+      crime: "Refusing to Give Strike to Partners",
       stats: { matches: 30, runs: 1345, wickets: 2, average: "42.1" }
     }
   ];
@@ -57,10 +57,10 @@ const TeamRoster = () => {
     <section id="team" className="bg-gradient-to-b from-stone-800 to-stone-900 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-amber-100 mb-4">टीम रोस्टर</h2>
+          <h2 className="text-4xl font-bold text-amber-100 mb-4">Team Roster</h2>
           <p className="text-xl text-amber-200 max-w-3xl mx-auto">
-            हमारी असाधारण खिलाड़ियों की टीम से मिलें जिन्होंने क्रिकेट के माध्यम से मुक्ति और उद्देश्य पाया है।
-            प्रत्येक खिलाड़ी विपरीत परिस्थितियों से निखरे अनूठे कौशल लेकर आता है।
+            Meet our extraordinary team of players who have found redemption and purpose through cricket.
+            Each player brings unique skills forged through adversity and determination behind bars.
           </p>
         </div>
         
