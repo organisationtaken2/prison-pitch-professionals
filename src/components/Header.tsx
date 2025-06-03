@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`bg-stone-800 text-stone-100 shadow-lg border-b-4 border-orange-600 relative transition-all duration-500 ${prisonAlarm ? 'animate-pulse bg-red-900' : ''}`}>
+    <header className={`bg-gradient-to-b from-stone-800 to-stone-900 text-stone-100 shadow-lg border-b-4 border-orange-600 relative transition-all duration-500 ${prisonAlarm ? 'animate-pulse bg-red-900' : ''}`}>
       {/* Prison bar pattern overlay with animation */}
       <div className="absolute inset-0 opacity-20">
         <div className="flex h-full">
@@ -42,38 +42,38 @@ const Header = () => {
               <Lock className="h-4 w-4 text-orange-600 absolute -top-1 -right-1 group-hover:rotate-45 transition-transform" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-stone-100 group-hover:text-orange-400 transition-colors">
-                Chin Tapak Dum Dum
+              <h1 className="text-2xl font-bold text-stone-100 group-hover:text-orange-400 transition-colors prison-shadow">
+                Iron Bars Cricket Club
               </h1>
               <p className="text-sm text-orange-400 animate-pulse">Maximum Security Cricket Team 🏏</p>
             </div>
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="hover:text-orange-400 transition-all duration-300 hover:scale-110 hover:rotate-2 font-medium relative group">
-              Home
+            <a href="#home" className="hover:text-orange-400 transition-all duration-300 hover:scale-110 hover:rotate-2 font-medium relative group border-b-2 border-transparent hover:border-orange-400">
+              Cell Block
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#team" className="hover:text-orange-400 transition-all duration-300 hover:scale-110 hover:-rotate-2 font-medium relative group">
+            <a href="#team" className="hover:text-orange-400 transition-all duration-300 hover:scale-110 hover:-rotate-2 font-medium relative group border-b-2 border-transparent hover:border-orange-400">
               Inmates
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#matches" className="hover:text-orange-400 transition-all duration-300 hover:scale-110 hover:rotate-2 font-medium relative group">
+            <a href="#matches" className="hover:text-orange-400 transition-all duration-300 hover:scale-110 hover:rotate-2 font-medium relative group border-b-2 border-transparent hover:border-orange-400">
               Yard Time
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#stats" className="hover:text-orange-400 transition-all duration-300 hover:scale-110 hover:-rotate-2 font-medium relative group">
+            <a href="#stats" className="hover:text-orange-400 transition-all duration-300 hover:scale-110 hover:-rotate-2 font-medium relative group border-b-2 border-transparent hover:border-orange-400">
               Rap Sheet
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#news" className="hover:text-orange-400 transition-all duration-300 hover:scale-110 hover:rotate-2 font-medium relative group">
+            <a href="#news" className="hover:text-orange-400 transition-all duration-300 hover:scale-110 hover:rotate-2 font-medium relative group border-b-2 border-transparent hover:border-orange-400">
               Cell Block News
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </nav>
 
           <button
-            className="md:hidden hover:rotate-180 transition-transform duration-500"
+            className="md:hidden hover:rotate-180 transition-transform duration-500 border-2 border-stone-600 rounded p-2 hover:border-orange-400"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -81,13 +81,13 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden pb-4 border-t border-stone-600 pt-4 animate-fade-in">
+          <div className="md:hidden pb-4 border-t-2 border-stone-600 pt-4 animate-fade-in bg-stone-800/90 backdrop-blur-sm rounded-b-lg">
             <nav className="flex flex-col space-y-2">
-              <a href="#home" className="py-2 hover:text-orange-400 transition-all hover:translate-x-2">🏠 Home</a>
-              <a href="#team" className="py-2 hover:text-orange-400 transition-all hover:translate-x-2">👥 Inmates</a>
-              <a href="#matches" className="py-2 hover:text-orange-400 transition-all hover:translate-x-2">🏏 Yard Time</a>
-              <a href="#stats" className="py-2 hover:text-orange-400 transition-all hover:translate-x-2">📊 Rap Sheet</a>
-              <a href="#news" className="py-2 hover:text-orange-400 transition-all hover:translate-x-2">📰 Cell Block News</a>
+              <a href="#home" className="py-2 hover:text-orange-400 transition-all hover:translate-x-2 border-l-4 border-transparent hover:border-orange-400 pl-4">🏠 Cell Block</a>
+              <a href="#team" className="py-2 hover:text-orange-400 transition-all hover:translate-x-2 border-l-4 border-transparent hover:border-orange-400 pl-4">👥 Inmates</a>
+              <a href="#matches" className="py-2 hover:text-orange-400 transition-all hover:translate-x-2 border-l-4 border-transparent hover:border-orange-400 pl-4">🏏 Yard Time</a>
+              <a href="#stats" className="py-2 hover:text-orange-400 transition-all hover:translate-x-2 border-l-4 border-transparent hover:border-orange-400 pl-4">📊 Rap Sheet</a>
+              <a href="#news" className="py-2 hover:text-orange-400 transition-all hover:translate-x-2 border-l-4 border-transparent hover:border-orange-400 pl-4">📰 Cell Block News</a>
             </nav>
           </div>
         )}

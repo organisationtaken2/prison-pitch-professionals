@@ -50,21 +50,41 @@ const TeamRoster = () => {
       sentence: "7 Years",
       crime: "Refusing to Give Strike to Partners",
       stats: { matches: 30, runs: 1345, wickets: 2, average: "42.1" }
+    },
+    {
+      name: "Karan 'The Enforcer' Mehta",
+      prisonerNumber: "IP2021-134",
+      position: "All Rounder",
+      sentence: "9 Years",
+      crime: "Intimidating Opposition with Stare",
+      stats: { matches: 28, runs: 987, wickets: 35, average: "35.3" }
     }
   ];
 
   return (
-    <section id="team" className="bg-gradient-to-b from-stone-800 to-stone-900 py-16">
+    <section id="team" className="bg-gradient-to-b from-stone-800 to-stone-900 py-16 border-t-4 border-orange-600">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-amber-100 mb-4">Team Roster</h2>
+        {/* Prison bar pattern overlay */}
+        <div className="absolute left-0 right-0 opacity-10 pointer-events-none">
+          <div className="flex h-full">
+            {Array.from({ length: 15 }).map((_, i) => (
+              <div key={i} className="flex-1 border-r border-stone-600"></div>
+            ))}
+          </div>
+        </div>
+        
+        <div className="text-center mb-12 relative">
+          <h2 className="text-4xl font-bold text-amber-100 mb-4 prison-shadow">Team Roster</h2>
           <p className="text-xl text-amber-200 max-w-3xl mx-auto">
             Meet our extraordinary team of players who have found redemption and purpose through cricket.
             Each player brings unique skills forged through adversity and determination behind bars.
           </p>
+          <div className="mt-4 bg-stone-700 border-2 border-amber-700 rounded-lg px-4 py-2 inline-block">
+            <span className="text-orange-400 font-bold">MAXIMUM SECURITY CRICKET DIVISION</span>
+          </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
           {players.map((player, index) => (
             <PlayerCard key={index} {...player} />
           ))}
