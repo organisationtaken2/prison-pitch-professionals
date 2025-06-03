@@ -1,5 +1,6 @@
+
 import { useState } from 'react';
-import { Shackles, Users, Calendar, AlertTriangle } from 'lucide-react';
+import { Lock, Users, Calendar, AlertTriangle } from 'lucide-react';
 
 interface PlayerCardProps {
   name: string;
@@ -85,7 +86,7 @@ const PlayerCard = ({ name, prisonerNumber, position, sentence, crime, stats }: 
                   <span className="text-amber-300 font-semibold">Crime:</span> {crime}
                 </p>
                 <div className="flex items-center space-x-1 mt-2">
-                  <Shackles className="h-3 w-3 text-amber-500" />
+                  <Lock className="h-3 w-3 text-amber-500" />
                   <span className="text-amber-300 text-xs">Behavior: {'⭐'.repeat(behaviorRating)}</span>
                 </div>
               </div>

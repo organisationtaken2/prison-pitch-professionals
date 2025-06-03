@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Building, Siren, Shackles } from 'lucide-react';
+import { Menu, X, Building, Siren, Lock } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ const Header = () => {
           <div className="flex items-center space-x-3 group cursor-pointer" onClick={triggerAlarm}>
             <div className="relative">
               <Building className="h-8 w-8 text-orange-400 group-hover:animate-bounce transition-all" />
-              <Shackles className="h-4 w-4 text-orange-600 absolute -top-1 -right-1 group-hover:rotate-45 transition-transform" />
+              <Lock className="h-4 w-4 text-orange-600 absolute -top-1 -right-1 group-hover:rotate-45 transition-transform" />
             </div>
             <div>
               <h1 className="text-2xl font-bold text-stone-100 group-hover:text-orange-400 transition-colors">
