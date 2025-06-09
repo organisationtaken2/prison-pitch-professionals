@@ -3,17 +3,17 @@ import { TrendingUp, Target, Award, Users } from 'lucide-react';
 
 const Statistics = () => {
   const teamStats = [
-    { label: "Matches Played", value: "78", icon: Users },
-    { label: "Matches Won", value: "52", icon: Award },
-    { label: "Win Percentage", value: "66.7%", icon: TrendingUp },
-    { label: "Highest Score", value: "312/6", icon: Target }
+    { label: "Matches Played", value: "13", icon: Users },
+    { label: "Matches Won", value: "10", icon: Award },
+    { label: "Win Percentage", value: "76.92%", icon: TrendingUp },
+    { label: "Highest Score", value: "66/3", icon: Target }
   ];
 
   const topPerformers = [
-    { name: "Rajesh Kumar", category: "Highest Individual Score", value: "156*" },
-    { name: "Vikram Singh", category: "Best Bowling Figures", value: "7/23" },
-    { name: "Suresh Patel", category: "Most Wickets", value: "95" },
-    { name: "Ravi Gupta", category: "Most Sixes", value: "67" }
+    { name: "Manoj Prabhu", category: "Best Bowling Figures", value: "3/0" },
+    { name: "Piradeep Ganesan", category: "Highest Individual Score", value: "47*" },
+    { name: "Manoj Prabhu", category: "Most Wickets", value: "6" },
+    { name: "Piradeep Ganesan", category: "Most Sixes", value: "32" }
   ];
 
   return (
