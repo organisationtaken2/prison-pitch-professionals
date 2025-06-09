@@ -4,23 +4,23 @@ import PlayerCard from './PlayerCard';
 const TeamRoster = () => {
   const players = [
     {
-      name: "Rajesh 'The Wall' Kumar",
+      name: "Manoj 'Lightning' Prabhu",
       prisonerNumber: "IP2015-001",
-      position: "Captain/Batsman",
+      position: "Captain/Bowler",
       sentence: "12 Years",
-      crime: "Excessive Ball Blocking",
+      crime: "Bowling Too Fast for Umpires",
       stats: { matches: 45, runs: 2150, wickets: 5, average: "48.9" }
     },
     {
-      name: "Vikram 'Lightning' Singh",
+      name: "Santhosh 'The Wall' Kumar",
       prisonerNumber: "IP2017-023",
       position: "Fast Bowler",
       sentence: "8 Years",
-      crime: "Bowling Too Fast for Umpires",
+      crime: "Excessive Ball Blocking",
       stats: { matches: 38, runs: 245, wickets: 87, average: "18.2" }
     },
     {
-      name: "Suresh 'Spin King' Patel",
+      name: "Manoj 'Spin King' Kumar",
       prisonerNumber: "IP2016-045",
       position: "Spinner",
       sentence: "15 Years",
@@ -28,7 +28,7 @@ const TeamRoster = () => {
       stats: { matches: 42, runs: 567, wickets: 95, average: "16.8" }
     },
     {
-      name: "Amit 'The Keeper' Sharma",
+      name: "Surya 'The Keeper' Prakash",
       prisonerNumber: "IP2018-067",
       position: "Wicket Keeper",
       sentence: "6 Years",
@@ -36,7 +36,7 @@ const TeamRoster = () => {
       stats: { matches: 40, runs: 1234, wickets: 0, average: "31.2" }
     },
     {
-      name: "Ravi 'Big Hitter' Gupta",
+      name: "Piradeep 'Big Hitter' Ganesan",
       prisonerNumber: "IP2019-089",
       position: "All Rounder",
       sentence: "10 Years",
@@ -44,7 +44,7 @@ const TeamRoster = () => {
       stats: { matches: 35, runs: 1567, wickets: 42, average: "44.8" }
     },
     {
-      name: "Deepak 'The Anchor' Verma",
+      name: "Prabhu 'The Anchor' Raam",
       prisonerNumber: "IP2020-112",
       position: "Batsman",
       sentence: "7 Years",
@@ -52,7 +52,7 @@ const TeamRoster = () => {
       stats: { matches: 30, runs: 1345, wickets: 2, average: "42.1" }
     },
     {
-      name: "Karan 'The Enforcer' Mehta",
+      name: "Ragul 'The Enforcer' Pandi",
       prisonerNumber: "IP2021-134",
       position: "All Rounder",
       sentence: "9 Years",
