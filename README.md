@@ -1,73 +1,32 @@
-# Welcome to your Lovable project
+# Chin Tapak Dum Dum
 
-## Project info
+Welcome to the official page of **Chin Tapak Dum Dum** – the most notorious (and hilarious) band of cricketing jailbirds you’ll ever meet! 🦹‍♂️🏏
 
-**URL**: https://lovable.dev/projects/e80172c2-ec02-4f1a-ab8a-e7edb8e4b533
+## Who Are We?
 
-## How can I edit this code?
+We’re not just a team, we’re a full-blown prison break in cricket whites! Formed in the deepest dungeons of the CDS Fun Serious Group B, our squad is made up of the wildest, wittiest, and most mischievous “prisoners” ever to wield a bat or ball. Each member brings their own unique crime to the pitch—be it stealing singles, robbing boundaries, or committing the occasional wide.
 
-There are several ways of editing your application.
+## Our Mission
 
-**Use Lovable**
+To bring chaos, laughter, and a little bit of cricketing anarchy to the CDS tournament. We play hard, laugh harder, and never miss a chance to plot our next great escape (from the scoreboard, of course).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e80172c2-ec02-4f1a-ab8a-e7edb8e4b533) and start prompting.
+## Tournament Details
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Event:** CDS Tournament (Fun Serious, Group B)
+- **Date:** 14th June 2025
+- **Venue:** New OMR Arena, Guduvancherri
+- **Hosts:** Catalyst & CRM Dev Ops teams
 
-**Use your preferred IDE**
+## What Makes Us Special?
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Uniforms:** Stripes, shackles (optional), and a lot of attitude.
+- **Strategy:** If you can’t win, at least make ‘em laugh!
+- **Team Motto:** “Break the chains, break the records!”
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Meet the Inmates
 
-Follow these steps:
+Every player is a character, and every match is a jailbreak. Whether you’re here for the cricket or the comedy, Chin Tapak Dum Dum promises a show you won’t forget.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e80172c2-ec02-4f1a-ab8a-e7edb8e4b533) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*Come for the cricket. Stay for the mischief. Support Chin Tapak Dum Dum – where every run is a run for freedom!*
