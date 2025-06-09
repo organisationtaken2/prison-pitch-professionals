@@ -4,46 +4,36 @@ import { Calendar, MapPin, Clock } from 'lucide-react';
 const Matches = () => {
   const upcomingMatches = [
     {
-      opponent: "State Police XI",
-      date: "2024-06-15",
+      opponent: "Villain குரூப்ஸ்",
+      date: "20245-06-14",
       time: "10:00 AM",
-      venue: "Central Prison Ground",
-      type: "Friendly Match"
+      venue: "New OMR Arena",
+      type: "League Match"
     },
     {
-      opponent: "Judicial Officers Cricket Club",
-      date: "2024-06-22",
-      time: "2:00 PM",
-      venue: "High Court Cricket Ground",
-      type: "Championship"
-    },
-    {
-      opponent: "Lawyers Cricket Association",
-      date: "2024-06-29",
-      time: "9:00 AM",
-      venue: "Bar Association Ground",
+      opponent: "Nambi vanga point oda ponga ",
+      date: "2025-06-14",
+      time: "12:30 PM",
+      venue: "New OMR Arena",
       type: "League Match"
     }
   ];
 
   const recentResults = [
     {
-      opponent: "Prison Officers XI",
-      result: "Won by 45 runs",
-      date: "2024-05-25",
-      score: "IP XI: 245/7 vs PO XI: 200/10"
+      opponent: "GBU Mammey",
+      result: "Won by 04-01",
+      date: "2025-05-30"
     },
     {
-      opponent: "Rehabilitation Center FC",
-      result: "Won by 6 wickets",
-      date: "2024-05-18",
-      score: "RC FC: 180/10 vs IP XI: 184/4"
+      opponent: "Catalyst கொத்தனார்ஸ்",
+      result: "Won by 04-01",
+      date: "2025-05-29"
     },
     {
-      opponent: "Social Workers United",
-      result: "Lost by 12 runs",
-      date: "2024-05-11",
-      score: "SWU: 195/8 vs IP XI: 183/10"
+      opponent: "Anaconda Boys Returnzz",
+      result: "Won by 3-2",
+      date: "2024-06-04"
     }
   ];
 
@@ -109,7 +99,7 @@ const Matches = () => {
                     </span>
                   </div>
                   <div className="space-y-2">
-                    <p className="text-gray-300">{result.score}</p>
+                    {/* No score property, so this line is removed */}
                     <p className="text-gray-400 text-sm">{new Date(result.date).toLocaleDateString('en-IN')}</p>
                   </div>
                 </div>
