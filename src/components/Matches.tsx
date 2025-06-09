@@ -22,12 +22,12 @@ const Matches = () => {
   const recentResults = [
     {
       opponent: "GBU Mammey",
-      result: "Won by 04-01",
+      result: "Won by 4-1",
       date: "2025-05-30"
     },
     {
       opponent: "Catalyst கொத்தனார்ஸ்",
-      result: "Won by 04-01",
+      result: "Won by 4-1",
       date: "2025-05-29"
     },
     {

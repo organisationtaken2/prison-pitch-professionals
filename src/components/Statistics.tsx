@@ -3,9 +3,9 @@ import { TrendingUp, Target, Award, Users } from 'lucide-react';
 
 const Statistics = () => {
   const teamStats = [
-    { label: "Matches Played", value: "13", icon: Users },
+    { label: "Matches Played", value: "15", icon: Users },
     { label: "Matches Won", value: "10", icon: Award },
-    { label: "Win Percentage", value: "76.92%", icon: TrendingUp },
+    { label: "Win Percentage", value: "66.67%", icon: TrendingUp },
     { label: "Highest Score", value: "66/3", icon: Target }
   ];
 
