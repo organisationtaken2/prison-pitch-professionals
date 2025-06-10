@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Play, Volume2, VolumeX } from 'lucide-react';
+import { Play, Volume2, VolumeX, X } from 'lucide-react';
 
 const Welcome = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -28,7 +28,7 @@ const Welcome = () => {
                 CHIN TAPAK <span className="text-amber-300 animate-pulse">DUM DUM</span>
               </h1>
               <p className="text-xl md:text-2xl text-amber-200 mb-8">
-                Welcome to the Iron Bars Cricket Club
+                Welcome to the Ultimate Cricket Experience
               </p>
               <div className="bg-red-900 text-red-100 px-4 py-2 text-sm font-mono border border-red-600 rounded inline-block mb-8">
                 ⚠️ MAXIMUM SECURITY ENTERTAINMENT ⚠️
@@ -44,44 +44,47 @@ const Welcome = () => {
             </button>
           </>
         ) : (
-          <div className="bg-stone-800 border-4 border-amber-600 rounded-lg overflow-hidden shadow-2xl">
-            <div className="relative">
-              <video
-                className="w-full max-w-4xl"
-                controls
-                autoPlay
-                muted={isMuted}
-                onEnded={() => setIsPlaying(false)}
-              >
-                <source 
-                  src="https://chin-tapak-dum-dum-development.zohostratus.com/Chin%20Tapak%20Dam%20Dam%F0%9F%98%82%F0%9F%A4%A3%20%28online-video-cutter.com%29.mp4?authorize" 
-                  type="video/mp4" 
-                />
-                Your browser does not support the video tag.
-              </video>
-              
-              <button
-                onClick={() => setIsMuted(!isMuted)}
-                className="absolute top-4 right-4 bg-stone-900/80 text-amber-100 p-2 rounded-lg hover:bg-stone-800 transition-all"
-              >
-                {isMuted ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
-              </button>
-            </div>
+          <div className="fixed inset-0 bg-black z-50 flex items-center justify-center">
+            <video
+              className="w-full h-full object-cover"
+              autoPlay
+              muted={isMuted}
+              onEnded={() => setIsPlaying(false)}
+              style={{ outline: 'none' }}
+            >
+              <source 
+                src="https://chin-tapak-dum-dum-development.zohostratus.com/Chin%20Tapak%20Dam%20Dam%F0%9F%98%82%F0%9F%A4%A3%20%28online-video-cutter.com%29.mp4?authorize" 
+                type="video/mp4" 
+              />
+              Your browser does not support the video tag.
+            </video>
             
-            <div className="p-4 bg-amber-900/50">
-              <p className="text-amber-100 font-bold">🚨 OFFICIAL TEAM ANTHEM 🚨</p>
-            </div>
+            <button
+              onClick={() => setIsMuted(!isMuted)}
+              className="absolute top-4 right-4 bg-stone-900/80 text-amber-100 p-3 rounded-lg hover:bg-stone-800 transition-all z-10"
+            >
+              {isMuted ? <VolumeX className="h-6 w-6" /> : <Volume2 className="h-6 w-6" />}
+            </button>
+            
+            <button
+              onClick={() => setIsPlaying(false)}
+              className="absolute top-4 left-4 bg-stone-900/80 text-amber-100 p-3 rounded-lg hover:bg-stone-800 transition-all z-10"
+            >
+              <X className="h-6 w-6" />
+            </button>
           </div>
         )}
         
-        <div className="mt-8">
-          <a 
-            href="/prison"
-            className="text-amber-300 hover:text-amber-100 underline text-lg transition-colors"
-          >
-            Enter the Prison Grounds →
-          </a>
-        </div>
+        {!isPlaying && (
+          <div className="mt-8">
+            <a 
+              href="/prison"
+              className="text-amber-300 hover:text-amber-100 underline text-lg transition-colors"
+            >
+              Enter the Grounds →
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

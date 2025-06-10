@@ -16,40 +16,24 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Team Info */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 md:col-span-3">
             <div className="flex items-center space-x-3 mb-4">
-              <Building className="h-8 w-8 text-orange-400" />
+              <img 
+                src="https://chin-tapak-dum-dum-development.zohostratus.com/teamlogo-removebg-preview.png?authorize" 
+                alt="Team Logo" 
+                className="h-12 w-auto"
+              />
               <div>
-                <h3 className="text-xl font-bold text-stone-100 prison-shadow">Iron Bars Cricket Club</h3>
-                <p className="text-orange-400 text-sm">Maximum Security Cricket Team</p>
+                <h3 className="text-xl font-bold text-stone-100 prison-shadow">Chin Tapak Dum Dum</h3>
+                <p className="text-orange-400 text-sm">Cricket Champions</p>
               </div>
             </div>
             <p className="text-stone-200 mb-4 max-w-md">
-              Proving that redemption is possible through sport. Our team represents hope, second chances, 
-              and the transformative power of cricket behind bars.
+              Proving that excellence is achieved through dedication and teamwork. Our team represents passion, 
+              skill, and the transformative power of cricket.
             </p>
             <div className="text-sm text-orange-400 bg-stone-700 border border-orange-600 rounded-lg p-3">
-              <p>© 2024 Iron Bars Cricket Club. All rights reserved.</p>
-              <p>Managed by Central Prison Sports Department</p>
-            </div>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-orange-400 border-b-2 border-orange-600 pb-2">Contact</h4>
-            <div className="space-y-3 text-stone-200">
-              <div className="flex items-center space-x-2 bg-stone-700/50 p-2 rounded border border-stone-600">
-                <Lock className="h-4 w-4 text-orange-400" />
-                <span className="text-sm">sports@centralprison.gov.in</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-stone-700/50 p-2 rounded border border-stone-600">
-                <Key className="h-4 w-4 text-orange-400" />
-                <span className="text-sm">+91 11 2345 6789</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-stone-700/50 p-2 rounded border border-stone-600">
-                <Building className="h-4 w-4 text-orange-400" />
-                <span className="text-sm">Central Prison, New Delhi</span>
-              </div>
+              <p>© 2024 Chin Tapak Dum Dum Cricket Team. All rights reserved.</p>
             </div>
           </div>
 

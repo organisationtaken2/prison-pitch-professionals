@@ -42,10 +42,11 @@ const Header = () => {
               <Lock className="h-4 w-4 text-orange-600 absolute -top-1 -right-1 group-hover:rotate-45 transition-transform" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-stone-100 group-hover:text-orange-400 transition-colors prison-shadow">
-                Iron Bars Cricket Club
-              </h1>
-              <p className="text-sm text-orange-400 animate-pulse">Maximum Security Cricket Team 🏏</p>
+              <img 
+                src="https://chin-tapak-dum-dum-development.zohostratus.com/teamlogo-removebg-preview.png?authorize" 
+                alt="Team Logo" 
+                className="h-12 w-auto"
+              />
             </div>
           </div>
           
