@@ -94,12 +94,12 @@ const Hero = () => {
           </div>
           
           <div className="space-x-4">
-            <button className="bg-amber-600 hover:bg-amber-700 text-amber-50 px-8 py-3 rounded-lg font-semibold transition-all border-2 border-amber-500 shadow-lg hover:scale-105 hover:rotate-1 hover:shadow-amber-500/50">
+            <a href="#team" className="inline-block bg-amber-600 hover:bg-amber-700 text-amber-50 px-8 py-3 rounded-lg font-semibold transition-all border-2 border-amber-500 shadow-lg hover:scale-105 hover:rotate-1 hover:shadow-amber-500/50">
               View Inmate Roster 👥
-            </button>
-            <button className="border-2 border-amber-500 text-amber-200 hover:bg-amber-600 hover:text-amber-50 px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:scale-105 hover:-rotate-1">
+            </a>
+            <a href="#matches" className="inline-block border-2 border-amber-500 text-amber-200 hover:bg-amber-600 hover:text-amber-50 px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:scale-105 hover:-rotate-1">
               Latest Yard Match 🏏
-            </button>
+            </a>
           </div>
           
           {/* Fun scrolling ticker */}

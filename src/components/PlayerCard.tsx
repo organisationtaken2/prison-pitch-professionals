@@ -51,7 +51,7 @@ const PlayerCard = ({ name, prisonerNumber, position, sentence, crime, image, st
                 </div>
                 
                 <div className="text-center z-10">
-                  <div className="w-24 h-24 rounded-full mx-auto mb-2 border-4 border-amber-600 shadow-lg hover:animate-spin cursor-pointer overflow-hidden"
+                  <div className="w-24 h-24 rounded-full mx-auto mb-2 border-4 border-amber-600 shadow-lg hover:animate-spin cursor-pointer overflow-hidden relative"
                        onClick={handleEscapeAttempt}>
                     <img 
                       src={image} 
@@ -65,6 +65,12 @@ const PlayerCard = ({ name, prisonerNumber, position, sentence, crime, image, st
                     />
                     <div className="hidden w-full h-full bg-stone-500 flex items-center justify-center">
                       <span className="text-2xl font-bold text-amber-100">{name.split(' ').map(n => n[0]).join('')}</span>
+                    </div>
+                    {/* Jail bars overlay */}
+                    <div className="absolute inset-0 flex justify-between items-center pointer-events-none">
+                      {Array.from({ length: 6 }).map((_, i) => (
+                        <div key={i} className="w-0.5 h-full bg-stone-700 opacity-60"></div>
+                      ))}
                     </div>
                   </div>
                   <div className="bg-amber-900 text-amber-100 px-3 py-1 text-xs font-mono border border-amber-600 rounded">
