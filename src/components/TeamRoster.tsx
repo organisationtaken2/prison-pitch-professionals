@@ -9,6 +9,7 @@ const TeamRoster = () => {
       position: "Captain/Bowler",
       sentence: "12 Years",
       crime: "Bowling Too Fast for Umpires",
+      image: "https://cds-players-development.zohostratus.com/GOD.png",
       stats: { matches: 45, runs: 2150, wickets: 5, average: "48.9" }
     },
     {
@@ -17,6 +18,7 @@ const TeamRoster = () => {
       position: "Fast Bowler",
       sentence: "8 Years",
       crime: "Excessive Ball Blocking",
+      image: "https://cds-players-development.zohostratus.com/msand.png",
       stats: { matches: 38, runs: 245, wickets: 87, average: "18.2" }
     },
     {
@@ -25,6 +27,7 @@ const TeamRoster = () => {
       position: "Spinner",
       sentence: "15 Years",
       crime: "Making Batsmen Dizzy with Spin",
+      image: "https://cds-players-development.zohostratus.com/manoj.png",
       stats: { matches: 42, runs: 567, wickets: 95, average: "16.8" }
     },
     {
@@ -33,6 +36,7 @@ const TeamRoster = () => {
       position: "Wicket Keeper",
       sentence: "6 Years",
       crime: "Stealing Too Many Wickets",
+      image: "https://cds-players-development.zohostratus.com/surya.png",
       stats: { matches: 40, runs: 1234, wickets: 0, average: "31.2" }
     },
     {
@@ -41,6 +45,7 @@ const TeamRoster = () => {
       position: "All Rounder",
       sentence: "10 Years",
       crime: "Hitting Sixes Out of Stadium",
+      image: "https://cds-players-development.zohostratus.com/Piradeep.png",
       stats: { matches: 35, runs: 1567, wickets: 42, average: "44.8" }
     },
     {
@@ -49,6 +54,7 @@ const TeamRoster = () => {
       position: "Batsman",
       sentence: "7 Years",
       crime: "Refusing to Give Strike to Partners",
+      image: "https://cds-players-development.zohostratus.com/prabhu.png",
       stats: { matches: 30, runs: 1345, wickets: 2, average: "42.1" }
     },
     {
@@ -57,6 +63,7 @@ const TeamRoster = () => {
       position: "All Rounder",
       sentence: "9 Years",
       crime: "Intimidating Opposition with Stare",
+      image: "https://cds-players-development.zohostratus.com/ragul.png",
       stats: { matches: 28, runs: 987, wickets: 35, average: "35.3" }
     }
   ];

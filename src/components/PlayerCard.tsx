@@ -8,6 +8,7 @@ interface PlayerCardProps {
   position: string;
   sentence: string;
   crime: string;
+  image: string;
   stats: {
     matches: number;
     runs: number;
@@ -16,7 +17,7 @@ interface PlayerCardProps {
   };
 }
 
-const PlayerCard = ({ name, prisonerNumber, position, sentence, crime, stats }: PlayerCardProps) => {
+const PlayerCard = ({ name, prisonerNumber, position, sentence, crime, image, stats }: PlayerCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isEscaping, setIsEscaping] = useState(false);
 
@@ -50,9 +51,21 @@ const PlayerCard = ({ name, prisonerNumber, position, sentence, crime, stats }: 
                 </div>
                 
                 <div className="text-center z-10">
-                  <div className="w-24 h-24 bg-stone-500 rounded-full mx-auto mb-2 flex items-center justify-center border-4 border-amber-600 shadow-lg hover:animate-spin cursor-pointer"
+                  <div className="w-24 h-24 rounded-full mx-auto mb-2 border-4 border-amber-600 shadow-lg hover:animate-spin cursor-pointer overflow-hidden"
                        onClick={handleEscapeAttempt}>
-                    <span className="text-2xl font-bold text-amber-100">{name.split(' ').map(n => n[0]).join('')}</span>
+                    <img 
+                      src={image} 
+                      alt={`${name} mugshot`}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        target.nextElementSibling?.classList.remove('hidden');
+                      }}
+                    />
+                    <div className="hidden w-full h-full bg-stone-500 flex items-center justify-center">
+                      <span className="text-2xl font-bold text-amber-100">{name.split(' ').map(n => n[0]).join('')}</span>
+                    </div>
                   </div>
                   <div className="bg-amber-900 text-amber-100 px-3 py-1 text-xs font-mono border border-amber-600 rounded">
                     #{prisonerNumber}
