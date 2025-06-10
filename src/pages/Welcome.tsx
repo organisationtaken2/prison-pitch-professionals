@@ -53,7 +53,7 @@ const Welcome = () => {
               style={{ outline: 'none' }}
             >
               <source 
-                src="https://chin-tapak-dum-dum-development.zohostratus.com/Chin%20Tapak%20Dam%20Dam%F0%9F%98%82%F0%9F%A4%A3%20%28online-video-cutter.com%29.mp4?authorize" 
+                src="https://chin-tapak-dum-dum-development.zohostratus.com/Chin%20Tapak%20Dam%20Dam%F0%9F%98%82%F0%9F%A4%A3%20%28online-video-cutter.com%29.mp4" 
                 type="video/mp4" 
               />
               Your browser does not support the video tag.
