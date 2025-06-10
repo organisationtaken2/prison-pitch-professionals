@@ -43,7 +43,7 @@ const Header = () => {
             </div>
             <div>
               <img 
-                src="https://chin-tapak-dum-dum-development.zohostratus.com/teamlogo-removebg-preview.png?authorize" 
+                src="https://chin-tapak-dum-dum-development.zohostratus.com/teamlogo-removebg-preview.png" 
                 alt="Team Logo" 
                 className="h-12 w-auto"
               />
