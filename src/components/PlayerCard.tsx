@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Lock, Users, Calendar, AlertTriangle } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 interface PlayerCardProps {
   name: string;
@@ -20,9 +21,21 @@ interface PlayerCardProps {
 const PlayerCard = ({ name, prisonerNumber, position, sentence, crime, image, stats }: PlayerCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isEscaping, setIsEscaping] = useState(false);
+  const [clickCount, setClickCount] = useState(0);
+  const { toast } = useToast();
 
   const handleEscapeAttempt = () => {
     setIsEscaping(true);
+    setClickCount(prev => prev + 1);
+    
+    if (clickCount === 4) {
+      toast({
+        title: "Achievement Unlocked! 🏆",
+        description: `${name.split(' ')[0]} tried to escape 5 times! That's dedication!`,
+      });
+      setClickCount(0);
+    }
+    
     setTimeout(() => setIsEscaping(false), 2000);
   };
 
@@ -40,7 +53,7 @@ const PlayerCard = ({ name, prisonerNumber, position, sentence, crime, image, st
             
             {/* Mugshot-style photo */}
             <div className="relative">
-              <div className="bg-gradient-to-b from-stone-600 to-stone-700 h-48 flex items-center justify-center border-b-2 border-amber-700 relative overflow-hidden">
+          <div className="bg-gradient-to-b from-stone-600 to-stone-700 h-48 flex items-center justify-center border-b-2 border-amber-700 relative overflow-hidden">
                 {/* Prison ID backdrop */}
                 <div className="absolute inset-0 bg-stone-600 opacity-20">
                   <div className="grid grid-cols-8 h-full">
@@ -50,9 +63,17 @@ const PlayerCard = ({ name, prisonerNumber, position, sentence, crime, image, st
                   </div>
                 </div>
                 
+                {/* Click counter for escape attempts */}
+                {clickCount > 0 && (
+                  <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full animate-bounce z-10">
+                    Escape attempts: {clickCount}/5
+                  </div>
+                )}
+                
                 <div className="text-center z-10">
-                  <div className="w-24 h-24 rounded-full mx-auto mb-2 border-4 border-amber-600 shadow-lg hover:animate-spin cursor-pointer overflow-hidden relative"
-                       onClick={handleEscapeAttempt}>
+                  <div className="w-24 h-24 rounded-full mx-auto mb-2 border-4 border-amber-600 shadow-lg hover:animate-spin cursor-pointer overflow-hidden relative hover-jiggle"
+                       onClick={handleEscapeAttempt}
+                       data-sound="catch">
                     <img 
                       src={image} 
                       alt={`${name} mugshot`}

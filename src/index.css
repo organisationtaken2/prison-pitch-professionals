@@ -166,6 +166,62 @@
   75% { transform: rotate(3deg); }
 }
 
+/* Cricket ball bounce animation */
+@keyframes cricket-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-cricket-bounce {
+  animation: cricket-bounce 2s infinite;
+}
+
+/* Sparkle effect */
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-sparkle {
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+/* Wiggle animation for interactive elements */
+@keyframes wiggle {
+  0%, 7%, 100% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-3deg);
+  }
+  20% {
+    transform: rotate(3deg);
+  }
+  25% {
+    transform: rotate(-1deg);
+  }
+  30% {
+    transform: rotate(1deg);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}
+
 /* Prison bar shadows */
 .prison-shadow {
   box-shadow: 
