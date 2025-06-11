@@ -3,25 +3,25 @@ import { TrendingUp, Target, Award, Users } from 'lucide-react';
 
 const Statistics = () => {
   const teamStats = [
-    { label: "Matches Played", value: "15", icon: Users },
-    { label: "Matches Won", value: "10", icon: Award },
-    { label: "Win Percentage", value: "66.67%", icon: TrendingUp },
-    { label: "Highest Score", value: "66/3", icon: Target }
+    { label: "Matches Aadinoom", value: "15", icon: Users },
+    { label: "Matches Jeyitoom", value: "10", icon: Award },
+    { label: "Win Percentage-u", value: "66.67%", icon: TrendingUp },
+    { label: "Highest Score-u", value: "66/3", icon: Target }
   ];
 
   const topPerformers = [
-    { name: "Manoj Prabhu", category: "Best Bowling Figures", value: "3/0" },
-    { name: "Piradeep Ganesan", category: "Highest Individual Score", value: "47*" },
-    { name: "Manoj Prabhu", category: "Most Wickets", value: "6" },
-    { name: "Piradeep Ganesan", category: "Most Sixes", value: "32" }
+    { name: "Manoj Prabhu", category: "Best Bowling Figures-u", value: "3/0" },
+    { name: "Piradeep Ganesan", category: "Highest Individual Score-u", value: "47*" },
+    { name: "Manoj Prabhu", category: "Most Wickets-u", value: "6" },
+    { name: "Piradeep Ganesan", category: "Most Sixes-u", value: "32" }
   ];
 
   return (
     <section id="stats" className="bg-gray-900 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Team Statistics</h2>
-          <p className="text-xl text-gray-300">Our journey in numbers - proving that second chances lead to first-class performance</p>
+          <h2 className="text-4xl font-bold text-white mb-4">Team-oda Statistics-u</h2>
+          <p className="text-xl text-gray-300">Naanga number-la epdinu - second chance first-class performance-a convert pannrom!</p>
         </div>
 
         {/* Team Stats Grid */}
@@ -40,7 +40,7 @@ const Statistics = () => {
 
         {/* Top Performers */}
         <div className="bg-gray-800 border border-gray-700 rounded-lg p-8">
-          <h3 className="text-2xl font-bold text-orange-500 mb-6 text-center">Record Holders</h3>
+          <h3 className="text-2xl font-bold text-purple-400 mb-6 text-center">Record Holders-u</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {topPerformers.map((performer, index) => (
               <div key={index} className="flex justify-between items-center p-4 bg-gray-700 rounded-lg">

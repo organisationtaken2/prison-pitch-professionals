@@ -7,11 +7,11 @@ const Hero = () => {
   const [prisonerCount, setPrisonerCount] = useState(15);
   
   const funnyQuotes = [
-    "Breaking Out... of losing streaks! 🏏",
-    "Serving time... and serving aces! ⚡",
-    "Our batting is criminal! 🔥",
-    "Locked up but never locked down! 💪",
-    "Doing hard time... hitting hard balls! 🏏"
+    "Apdi podra... losing streak-a break pannitom! 🏏",
+    "Time serve pannitu... ace-um serve pannrom! ⚡",
+    "Naanga batting-a criminal-a pottu thakkarom! 🔥",
+    "Lock up-la irukkom ana locked down illiye! 💪",
+    "Hard time pannitu... hard ball-um hit pannrom! 🏏"
   ];
   
   const [currentQuote, setCurrentQuote] = useState(0);
@@ -59,8 +59,8 @@ const Hero = () => {
               </div>
             </div>
             
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 text-amber-100 hover:text-orange-300 transition-colors cursor-pointer" onClick={handleEscapeAttempt}>
-              CHIN TAPAK <span className="text-amber-300 animate-pulse">DUM DUM</span>
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 text-amber-100 hover:text-purple-300 transition-colors cursor-pointer" onClick={handleEscapeAttempt}>
+              CHIN TAPAK <span className="text-purple-300 animate-pulse">DUM DUM</span>
             </h2>
             
             <div className="h-16 flex items-center justify-center">
@@ -70,10 +70,10 @@ const Hero = () => {
             </div>
             
             {escapeAttempt && (
-              <div className="animate-bounce text-red-400 font-bold text-lg">
-                🚨 ESCAPE ATTEMPT DETECTED! 🚨
+              <div className="animate-bounce text-pink-400 font-bold text-lg">
+                🚨 OI OI! ESCAPE PANNA TRY PANNRIYAA! 🚨
                 <br />
-                <span className="text-sm">All prisoners accounted for!</span>
+                <span className="text-sm">Yellam prisoners kanakku correct-a irukku da!</span>
               </div>
             )}
           </div>
@@ -81,31 +81,31 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-12">
             <div className="flex items-center space-x-2 bg-amber-800/50 px-4 py-2 rounded-lg border border-amber-600 hover:scale-110 transition-transform cursor-pointer group">
               <Trophy className="h-6 w-6 text-amber-300 group-hover:animate-spin" />
-              <span className="text-lg">5 Parole Victories</span>
+              <span className="text-lg">5 Parole Jeyithu</span>
             </div>
             <div className="flex items-center space-x-2 bg-amber-800/50 px-4 py-2 rounded-lg border border-amber-600 hover:scale-110 transition-transform cursor-pointer group">
-              <Users className="h-6 w-6 text-amber-300 group-hover:animate-bounce" />
-              <span className="text-lg">{prisonerCount} Active Inmates</span>
+              <Users className="h-6 w-6 text-purple-300 group-hover:animate-bounce" />
+              <span className="text-lg">{prisonerCount} Active Kaidis</span>
             </div>
             <div className="flex items-center space-x-2 bg-amber-800/50 px-4 py-2 rounded-lg border border-amber-600 hover:scale-110 transition-transform cursor-pointer group">
-              <CalendarDays className="h-6 w-6 text-amber-300 group-hover:animate-pulse" />
-              <span className="text-lg">Sentenced Since 2015</span>
+              <CalendarDays className="h-6 w-6 text-pink-300 group-hover:animate-pulse" />
+              <span className="text-lg">2015-la Sentence Aachu</span>
             </div>
           </div>
           
           <div className="space-x-4">
-            <a href="#team" className="inline-block bg-amber-600 hover:bg-amber-700 text-amber-50 px-8 py-3 rounded-lg font-semibold transition-all border-2 border-amber-500 shadow-lg hover:scale-105 hover:rotate-1 hover:shadow-amber-500/50">
-              View Inmate Roster 👥
+            <a href="#team" className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg hover:scale-105 hover:rotate-1">
+              Kaidi List Paakkalaam 👥
             </a>
-            <a href="#matches" className="inline-block border-2 border-amber-500 text-amber-200 hover:bg-amber-600 hover:text-amber-50 px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:scale-105 hover:-rotate-1">
+            <a href="#matches" className="inline-block border-2 border-purple-500 text-purple-200 hover:bg-purple-600 hover:text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg hover:scale-105 hover:-rotate-1">
               Latest Yard Match 🏏
             </a>
           </div>
           
           {/* Fun scrolling ticker */}
-          <div className="mt-8 bg-stone-800/80 border border-amber-600 rounded-lg p-2 overflow-hidden">
-            <div className="animate-marquee whitespace-nowrap text-amber-300">
-              🚨 BREAKING: Team wins another match • No escapes this week! • Commissary serves extra cricket bats • Warden approves new uniforms • 🚨
+          <div className="mt-8 bg-gradient-to-r from-purple-800/80 to-pink-800/80 border border-purple-500 rounded-full p-2 overflow-hidden">
+            <div className="animate-marquee whitespace-nowrap text-purple-200">
+              🚨 BREAKING: Team-oda vera match jeyithuchu • Indha week escape illa! • Commissary-la extra cricket bats kuduthaanga • Warden pudhu uniform approve panniyaachu • 🚨
             </div>
           </div>
         </div>
