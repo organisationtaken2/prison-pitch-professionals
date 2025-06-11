@@ -4,65 +4,65 @@ import PlayerCard from './PlayerCard';
 const TeamRoster = () => {
   const players = [
     {
-      name: "Manoj 'Lightning' Prabhu",
+      name: "Manoj 'Lightning-u' Prabhu",
       prisonerNumber: "IP2015-001",
-      position: "Captain/Bowler",
-      sentence: "12 Years",
-      crime: "Bowling Too Fast for Umpires",
+      position: "Captain/Fast Bowler-u",
+      sentence: "12 Varsham",
+      crime: "Romba Fast-a Ball Potu Umpire-ku Kannu Theriyala",
       image: "https://cds-players-development.zohostratus.com/GOD.png",
-      stats: { matches: 45, runs: 2150, wickets: 5, average: "48.9" }
+      stats: { matches: 45, runs: 2150, wickets: 85, average: "48.9" }
     },
     {
-      name: "Santhosh 'The Wall' Kumar",
+      name: "Santhosh 'The Wall-u' Kumar",
       prisonerNumber: "IP2017-023",
-      position: "Fast Bowler",
-      sentence: "8 Years",
-      crime: "Excessive Ball Blocking",
+      position: "Fast Bowler Thala",
+      sentence: "8 Varsham",
+      crime: "Yaarum Ball-a Hit Panna Mudiyala - Too Much Defense",
       image: "https://cds-players-development.zohostratus.com/msand.png",
       stats: { matches: 38, runs: 245, wickets: 87, average: "18.2" }
     },
     {
-      name: "Manoj 'Spin King' Kumar",
+      name: "Manoj 'Spin Raja' Kumar",
       prisonerNumber: "IP2016-045",
-      position: "Spinner",
-      sentence: "15 Years",
-      crime: "Making Batsmen Dizzy with Spin",
+      position: "Spinner Machaan",
+      sentence: "15 Varsham",
+      crime: "Batsman-a Spin Panni Mayakkam Pottu",
       image: "https://cds-players-development.zohostratus.com/manoj.png",
       stats: { matches: 42, runs: 567, wickets: 95, average: "16.8" }
     },
     {
-      name: "Surya 'The Keeper' Prakash",
+      name: "Surya 'Keeper Boss' Prakash",
       prisonerNumber: "IP2018-067",
-      position: "Wicket Keeper",
-      sentence: "6 Years",
-      crime: "Stealing Too Many Wickets",
+      position: "Wicket Keeper Thala",
+      sentence: "6 Varsham",
+      crime: "Romba Wicket-u Steal Pannitaan",
       image: "https://cds-players-development.zohostratus.com/surya.png",
       stats: { matches: 40, runs: 1234, wickets: 0, average: "31.2" }
     },
     {
-      name: "Piradeep 'Big Hitter' Ganesan",
+      name: "Piradeep 'Six Machine-u' Ganesan",
       prisonerNumber: "IP2019-089",
-      position: "All Rounder",
-      sentence: "10 Years",
-      crime: "Hitting Sixes Out of Stadium",
+      position: "All Rounder Mass",
+      sentence: "10 Varsham",
+      crime: "Six Adichchu Stadium Veliya Anupitaan",
       image: "https://cds-players-development.zohostratus.com/Piradeep.png",
       stats: { matches: 35, runs: 1567, wickets: 42, average: "44.8" }
     },
     {
-      name: "Prabhu 'The Anchor' Raam",
+      name: "Prabhu 'Anchor Pannuvan' Raam",
       prisonerNumber: "IP2020-112",
-      position: "Batsman",
-      sentence: "7 Years",
-      crime: "Refusing to Give Strike to Partners",
+      position: "Opening Batsman-u",
+      sentence: "7 Varsham",
+      crime: "Strike-a Partner-ku Kudukka Maataan",
       image: "https://cds-players-development.zohostratus.com/prabhu.png",
       stats: { matches: 30, runs: 1345, wickets: 2, average: "42.1" }
     },
     {
-      name: "Ragul 'The Enforcer' Pandi",
+      name: "Ragul 'Kaara Look-u' Pandi",
       prisonerNumber: "IP2021-134",
-      position: "All Rounder",
-      sentence: "9 Years",
-      crime: "Intimidating Opposition with Stare",
+      position: "All Rounder Rowdy",
+      sentence: "9 Varsham",
+      crime: "Opposition Team-a Look Potti Bayam Panniraan",
       image: "https://cds-players-development.zohostratus.com/ragul.png",
       stats: { matches: 28, runs: 987, wickets: 35, average: "35.3" }
     }
@@ -81,13 +81,13 @@ const TeamRoster = () => {
         </div>
         
         <div className="text-center mb-12 relative">
-          <h2 className="text-4xl font-bold text-amber-100 mb-4 prison-shadow">Team Roster</h2>
+          <h2 className="text-4xl font-bold text-amber-100 mb-4 prison-shadow">Team Roster-u 💪</h2>
           <p className="text-xl text-amber-200 max-w-3xl mx-auto">
-            Meet our extraordinary team of players who have found redemption and purpose through cricket.
-            Each player brings unique skills forged through adversity and determination behind bars.
+            Namma extraordinary players-a meet pannunga! Ellaarum cricket through redemption find pannirukanga.
+            Oru oru player-um unique skills vachirukanga - adversity and determination-oda forge pannitanga inside bars-la!
           </p>
           <div className="mt-4 bg-stone-700 border-2 border-amber-700 rounded-lg px-4 py-2 inline-block">
-            <span className="text-orange-400 font-bold">MAXIMUM SECURITY CRICKET DIVISION</span>
+            <span className="text-orange-400 font-bold">MAXIMUM SECURITY CRICKET WARRIORS 🔥</span>
           </div>
         </div>
         

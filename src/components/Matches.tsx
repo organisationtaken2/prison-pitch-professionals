@@ -41,8 +41,8 @@ const Matches = () => {
     <section id="matches" className="bg-black py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Fixtures & Results</h2>
-          <p className="text-xl text-gray-300">Stay updated with our latest matches and upcoming fixtures</p>
+          <h2 className="text-4xl font-bold text-white mb-4">Matches & Results-u 🏏</h2>
+          <p className="text-xl text-gray-300">Namma team-oda latest matches and upcoming mass fixtures-ku update aagunga!</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

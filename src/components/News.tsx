@@ -4,32 +4,32 @@ import { Calendar, User } from 'lucide-react';
 const News = () => {
   const newsArticles = [
     {
-      title: "Indian Prison XI Wins Inter-Institutional Championship",
-      excerpt: "Our team emerged victorious in the annual Inter-Institutional Cricket Championship, defeating 12 other teams...",
+      title: "Manoj 'Lightning-u' Prabhu Century Adichchu Villain குரூப்ஸ்-a Ootitaan!",
+      excerpt: "Captain Lightning-u semma century adichu 156* runs pannaan. Last over-la 4 sixes consecutive-a adichu match-a thiruppinaan. Opposition bowler-u cry pannitaan...",
       date: "2024-05-30",
-      author: "Sports Department",
-      category: "Victory"
+      author: "Match Reporter Machaan",
+      category: "Mass Victory"
     },
     {
-      title: "New Training Facility Inaugurated",
-      excerpt: "A state-of-the-art cricket training facility was inaugurated at the Central Prison, featuring modern equipment...",
+      title: "Piradeep 'Six Machine-u' Hat-trick of Sixes Pottaan!",
+      excerpt: "Piradeep anna last 3 balls-la 3 sixes adichu stadium-la irukka crowd-a mad panniraan. Ball ellaam veliya pochu, ball boy-ku romba vela achu...",
       date: "2024-05-25",
-      author: "Administration",
-      category: "Facility"
+      author: "Six Counter Anna",
+      category: "Breaking Records"
     },
     {
-      title: "Player Rehabilitation Success Story",
-      excerpt: "Former team captain shares his journey of transformation through cricket and how the sport changed his life...",
+      title: "Ragul 'Kaara Look-u' Pandi 5 Wickets in 5 Balls!",
+      excerpt: "Ragul bhai oru over-la 5 wickets edukkaran! Opposition team full-a nervous aagi, stumps ellaam flying. Umpire kooda bayandhuchu...",
       date: "2024-05-20",
-      author: "Rehabilitation Team",
-      category: "Success Story"
+      author: "Wicket Tracker Bro",
+      category: "Bowling Beast"
     },
     {
-      title: "Upcoming Charity Match Announcement",
-      excerpt: "Indian Prison XI will face Celebrity XI in a charity match to raise funds for prisoner education programs...",
+      title: "Team-a Celebrity XI-ku Challenge Pannanga!",
+      excerpt: "Namma boys Celebrity XI-ku challenge pannirukanga. Dhoni, Kohli ellaam varanga. Manoj Lightning already practice pannitu irukkaan. Mass show aagum!",
       date: "2024-05-15",
-      author: "Event Committee",
-      category: "Announcement"
+      author: "Challenge Committee Thala",
+      category: "Big Match Coming"
     }
   ];
 
@@ -37,8 +37,8 @@ const News = () => {
     <section id="news" className="bg-black py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Latest News</h2>
-          <p className="text-xl text-gray-300">Stay updated with the latest happenings from Indian Prison XI</p>
+          <h2 className="text-4xl font-bold text-white mb-4">Latest News-u 🔥</h2>
+          <p className="text-xl text-gray-300">Namma Prison XI-oda latest mass updates-ku stay tuned-a irungappa!</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
