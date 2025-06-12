@@ -69,25 +69,25 @@ const TeamRoster = () => {
   ];
 
   return (
-    <section id="team" className="bg-gradient-to-b from-stone-800 to-stone-900 py-16 border-t-4 border-orange-600">
+    <section id="team" className="bg-background py-16 border-t-4 border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Prison bar pattern overlay */}
         <div className="absolute left-0 right-0 opacity-10 pointer-events-none">
           <div className="flex h-full">
             {Array.from({ length: 15 }).map((_, i) => (
-              <div key={i} className="flex-1 border-r border-stone-600"></div>
+              <div key={i} className="flex-1 border-r border-border"></div>
             ))}
           </div>
         </div>
         
         <div className="text-center mb-12 relative">
-          <h2 className="text-4xl font-bold text-amber-100 mb-4 prison-shadow">Team Roster-u 💪</h2>
-          <p className="text-xl text-amber-200 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-foreground mb-4 prison-shadow">Team Roster-u 💪</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Namma extraordinary players-a meet pannunga! Ellaarum cricket through redemption find pannirukanga.
             Oru oru player-um unique skills vachirukanga - adversity and determination-oda forge pannitanga inside bars-la!
           </p>
-          <div className="mt-4 bg-stone-700 border-2 border-amber-700 rounded-lg px-4 py-2 inline-block">
-            <span className="text-orange-400 font-bold">MAXIMUM SECURITY CRICKET WARRIORS 🔥</span>
+          <div className="mt-4 bg-card border-2 border-border rounded-lg px-4 py-2 inline-block">
+            <span className="text-primary font-bold">MAXIMUM SECURITY CRICKET WARRIORS 🔥</span>
           </div>
         </div>
         

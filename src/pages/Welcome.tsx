@@ -20,12 +20,12 @@ const Welcome = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-stone-900 to-amber-900 flex items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-background to-secondary flex items-center justify-center relative overflow-hidden">
       {/* Prison bar pattern overlay */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="flex h-full">
           {Array.from({ length: 20 }).map((_, i) => (
-            <div key={i} className="flex-1 border-r border-amber-600"></div>
+            <div key={i} className="flex-1 border-r border-border"></div>
           ))}
         </div>
       </div>
@@ -33,14 +33,14 @@ const Welcome = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {!isPlaying ? (
           <div className="animate-fade-in">
-            <div className="bg-amber-900/30 backdrop-blur-sm border-2 border-amber-600 rounded-lg p-8 mb-8 shadow-2xl">
-              <h1 className="text-6xl md:text-8xl font-bold mb-6 text-amber-100 prison-shadow">
-                CHIN TAPAK <span className="text-purple-300 animate-pulse">DUM DUM</span>
+            <div className="bg-card/30 backdrop-blur-sm border-2 border-border rounded-lg p-8 mb-8 shadow-2xl">
+              <h1 className="text-6xl md:text-8xl font-bold mb-6 text-foreground prison-shadow">
+                CHIN TAPAK <span className="text-primary animate-pulse">DUM DUM</span>
               </h1>
-              <p className="text-xl md:text-2xl text-amber-200 mb-8">
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
                 Ultimate Cricket Experience-ku vandhutingaaa! 🏏
               </p>
-              <div className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-4 py-2 text-sm font-mono border border-purple-400 rounded-full inline-block mb-8 animate-pulse">
+              <div className="bg-primary text-primary-foreground px-4 py-2 text-sm font-mono border border-border rounded-full inline-block mb-8 animate-pulse">
                 ⚠️ MAXIMUM MASALA ENTERTAINMENT ⚠️
               </div>
             </div>
@@ -48,23 +48,23 @@ const Welcome = () => {
             <div className="mt-8">
               <button
                 onClick={handleEnterGrounds}
-                className="bg-amber-600 hover:bg-amber-700 text-amber-50 px-12 py-6 rounded-lg font-bold text-xl transition-all border-4 border-amber-500 shadow-xl hover:scale-105 hover:shadow-amber-500/50"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 rounded-lg font-bold text-xl transition-all border-4 border-primary shadow-xl hover:scale-105 hover:shadow-primary/50"
               >
                 Ground-ku Polaam! 🏃‍♂️💨
               </button>
             </div>
           </div>
         ) : (
-          <div className="fixed inset-0 bg-black z-50 flex items-center justify-center animate-fade-in">
+          <div className="fixed inset-0 bg-background z-50 flex items-center justify-center animate-fade-in">
             {/* Blurred background overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-pink-900/20 backdrop-blur-sm"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-card/20 to-secondary/20 backdrop-blur-sm"></div>
             <div className="w-4/5 h-4/5 relative z-10">
               <video
-                className="w-full h-full object-cover rounded-lg shadow-2xl border-4 border-purple-500/50 backdrop-blur-sm"
+                className="w-full h-full object-cover rounded-lg shadow-2xl border-4 border-primary/50 backdrop-blur-sm"
                 autoPlay
                 muted={isMuted}
                 onEnded={handleVideoEnd}
-                style={{ outline: 'none', filter: 'drop-shadow(0 0 20px rgba(168, 85, 247, 0.5))' }}
+                style={{ outline: 'none', filter: 'blur(2px) drop-shadow(0 0 20px hsl(var(--primary)))' }}
                 controls={false}
               >
                 <source 
@@ -76,14 +76,14 @@ const Welcome = () => {
               
               <button
                 onClick={() => setIsMuted(!isMuted)}
-                className="absolute top-4 right-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white p-3 rounded-full hover:scale-110 transition-all z-20 shadow-lg"
+                className="absolute top-4 right-4 bg-primary text-primary-foreground p-3 rounded-full hover:scale-110 transition-all z-20 shadow-lg"
               >
                 {isMuted ? <VolumeX className="h-6 w-6" /> : <Volume2 className="h-6 w-6" />}
               </button>
               
               <button
                 onClick={() => setIsPlaying(false)}
-                className="absolute top-4 left-4 bg-gradient-to-r from-red-500 to-orange-500 text-white p-3 rounded-full hover:scale-110 transition-all z-20 shadow-lg"
+                className="absolute top-4 left-4 bg-destructive text-destructive-foreground p-3 rounded-full hover:scale-110 transition-all z-20 shadow-lg"
               >
                 <X className="h-6 w-6" />
               </button>

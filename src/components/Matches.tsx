@@ -38,29 +38,29 @@ const Matches = () => {
   ];
 
   return (
-    <section id="matches" className="bg-black py-16">
+    <section id="matches" className="bg-secondary py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">Matches & Results-u 🏏</h2>
-          <p className="text-xl text-gray-300">Namma team-oda latest matches and upcoming mass fixtures-ku update aagunga!</p>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Matches & Results-u 🏏</h2>
+          <p className="text-xl text-muted-foreground">Namma team-oda latest matches and upcoming mass fixtures-ku update aagunga!</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Upcoming Matches */}
           <div>
-            <h3 className="text-2xl font-bold text-orange-500 mb-6">Upcoming Matches</h3>
+            <h3 className="text-2xl font-bold text-primary mb-6">Upcoming Matches</h3>
             <div className="space-y-4">
               {upcomingMatches.map((match, index) => (
-                <div key={index} className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-orange-500 transition-colors">
+                <div key={index} className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors">
                   <div className="flex justify-between items-start mb-4">
-                    <h4 className="text-xl font-bold text-white">vs {match.opponent}</h4>
-                    <span className="bg-orange-500 text-white px-2 py-1 text-xs font-bold rounded">
+                    <h4 className="text-xl font-bold text-foreground">vs {match.opponent}</h4>
+                    <span className="bg-primary text-primary-foreground px-2 py-1 text-xs font-bold rounded">
                       {match.type}
                     </span>
                   </div>
                   <div className="space-y-2">
-                    <div className="flex items-center text-gray-300">
-                      <Calendar className="h-4 w-4 mr-2 text-orange-500" />
+                    <div className="flex items-center text-muted-foreground">
+                      <Calendar className="h-4 w-4 mr-2 text-primary" />
                       <span>{new Date(match.date).toLocaleDateString('en-IN', { 
                         weekday: 'long',
                         year: 'numeric',
@@ -68,12 +68,12 @@ const Matches = () => {
                         day: 'numeric'
                       })}</span>
                     </div>
-                    <div className="flex items-center text-gray-300">
-                      <Clock className="h-4 w-4 mr-2 text-orange-500" />
+                    <div className="flex items-center text-muted-foreground">
+                      <Clock className="h-4 w-4 mr-2 text-primary" />
                       <span>{match.time}</span>
                     </div>
-                    <div className="flex items-center text-gray-300">
-                      <MapPin className="h-4 w-4 mr-2 text-orange-500" />
+                    <div className="flex items-center text-muted-foreground">
+                      <MapPin className="h-4 w-4 mr-2 text-primary" />
                       <span>{match.venue}</span>
                     </div>
                   </div>
@@ -84,23 +84,23 @@ const Matches = () => {
 
           {/* Recent Results */}
           <div>
-            <h3 className="text-2xl font-bold text-orange-500 mb-6">Recent Results</h3>
+            <h3 className="text-2xl font-bold text-primary mb-6">Recent Results</h3>
             <div className="space-y-4">
               {recentResults.map((result, index) => (
-                <div key={index} className="bg-gray-800 border border-gray-700 rounded-lg p-6">
+                <div key={index} className="bg-card border border-border rounded-lg p-6">
                   <div className="flex justify-between items-start mb-4">
-                    <h4 className="text-xl font-bold text-white">vs {result.opponent}</h4>
+                    <h4 className="text-xl font-bold text-foreground">vs {result.opponent}</h4>
                     <span className={`px-3 py-1 text-sm font-bold rounded ${
                       result.result.includes('Won') 
-                        ? 'bg-green-600 text-white' 
-                        : 'bg-red-600 text-white'
+                        ? 'bg-primary text-primary-foreground' 
+                        : 'bg-destructive text-destructive-foreground'
                     }`}>
                       {result.result}
                     </span>
                   </div>
                   <div className="space-y-2">
                     {/* No score property, so this line is removed */}
-                    <p className="text-gray-400 text-sm">{new Date(result.date).toLocaleDateString('en-IN')}</p>
+                    <p className="text-muted-foreground text-sm">{new Date(result.date).toLocaleDateString('en-IN')}</p>
                   </div>
                 </div>
               ))}
