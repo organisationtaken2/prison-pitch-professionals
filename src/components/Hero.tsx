@@ -7,11 +7,13 @@ const Hero = () => {
   const [prisonerCount, setPrisonerCount] = useState(15);
   
   const funnyQuotes = [
-    "Apdi podra... losing streak-a break pannitom! 🏏",
-    "Time serve pannitu... ace-um serve pannrom! ⚡",
-    "Naanga batting-a criminal-a pottu thakkarom! 🔥",
-    "Lock up-la irukkom ana locked down illiye! 💪",
-    "Hard time pannitu... hard ball-um hit pannrom! 🏏"
+    "Enna da... Boundary-ku ball poiduchu! Warden-u kooda clap pannaaru! 🏏",
+    "Commissary-la cricket bat order panni... toilet paper kuda vaanginachu! 🧻⚡",
+    "Naanga Dhoni-ya vida better... ana phone call panna mudiyaathu! 📞🔥",
+    "Lock up-la Six adichu... neighboring cell-la poi vizhundhuchu! 💪",
+    "Hard time serve pannitu... soft drinks-um serve pannrom canteen-la! 🥤🏏",
+    "Umpire decision wrong-nu complaint panninom... RTI file panninachu! 📄",
+    "Team captain election conduct panninachu... democracy success! 🗳️"
   ];
   
   const [currentQuote, setCurrentQuote] = useState(0);
@@ -59,8 +61,11 @@ const Hero = () => {
               </div>
             </div>
             
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 text-foreground hover:text-primary transition-colors cursor-pointer" onClick={handleEscapeAttempt}>
-              CHIN TAPAK <span className="text-primary animate-pulse">DUM DUM</span>
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 text-foreground hover:text-primary transition-colors cursor-pointer hover:animate-wiggle" onClick={handleEscapeAttempt}>
+              CHIN TAPAK <span className="text-primary animate-pulse hover:animate-bounce">DUM DUM</span>
+              <div className="text-sm text-muted-foreground mt-2 animate-marquee">
+                *Name suggested by team. Management not responsible for confusion.*
+              </div>
             </h2>
             
             <div className="h-16 flex items-center justify-center">
@@ -70,10 +75,12 @@ const Hero = () => {
             </div>
             
             {escapeAttempt && (
-              <div className="animate-bounce text-destructive font-bold text-lg">
-                🚨 OI OI! ESCAPE PANNA TRY PANNRIYAA! 🚨
+              <div className="animate-bounce text-destructive font-bold text-lg bg-destructive/20 border border-destructive rounded-lg p-4 mt-4">
+                🚨 AYYO! ESCAPE PANNRAN! ALERT ALERT! 🚨
                 <br />
-                <span className="text-sm">Yellam prisoners kanakku correct-a irukku da!</span>
+                <span className="text-sm">Warden sir-ku inform panniten! GPS tracker ON achu! 📍</span>
+                <br />
+                <span className="text-xs animate-pulse">*Also mom-ku call panniten*</span>
               </div>
             )}
           </div>
@@ -94,19 +101,24 @@ const Hero = () => {
           </div>
           
           <div className="space-x-4">
-            <a href="#team" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg hover:scale-105 hover:rotate-1">
-              Kaidi List Paakkalaam 👥
+            <a href="#team" className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg hover:scale-110 hover:rotate-3 hover:animate-wiggle">
+              🔍 Kaidi Database (Password Protected) 👥
             </a>
-            <a href="#matches" className="inline-block border-2 border-primary text-foreground hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg hover:scale-105 hover:-rotate-1">
-              Latest Yard Match 🏏
+            <a href="#matches" className="inline-block border-2 border-primary text-foreground hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-full font-semibold transition-all shadow-lg hover:scale-110 hover:-rotate-3 animate-pulse">
+              📺 Live From Yard (No Commentary) 🏏
             </a>
           </div>
           
           {/* Fun scrolling ticker */}
-          <div className="mt-8 bg-card/80 border border-border rounded-full p-2 overflow-hidden">
-            <div className="animate-marquee whitespace-nowrap text-muted-foreground">
-              🚨 BREAKING: Team-oda vera match jeyithuchu • Indha week escape illa! • Commissary-la extra cricket bats kuduthaanga • Warden pudhu uniform approve panniyaachu • 🚨
+          <div className="mt-8 bg-card/80 border-2 border-primary rounded-full p-3 overflow-hidden shadow-lg">
+            <div className="animate-marquee whitespace-nowrap text-muted-foreground font-bold">
+              🚨 BREAKING: Manoj-u century adichu celebration-la cake cut pannaan! • Someone stole the wickets (investigation ongoing) • New rule: No dancing after six! • Warden-u umpire duties additional-a vaangi! • Canteen-la cricket shaped samosa introduced! • WiFi password changed again (hint: captain's jersey number) • Rain dance practice cancelled due to rain • 🚨
             </div>
+          </div>
+          
+          {/* Silly disclaimer */}
+          <div className="mt-4 text-xs text-muted-foreground bg-card/50 border border-border rounded-lg p-2 hover:bg-card transition-all">
+            ⚠️ <strong>Disclaimer:</strong> No actual prisoners were harmed during cricket matches. All injuries due to terrible bowling. Management not responsible for hurt egos. Please maintain 6 feet distance from Ragul when he's angry. Medical facility available (band-aids only). ⚠️
           </div>
         </div>
       </div>

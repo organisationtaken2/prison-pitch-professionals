@@ -81,13 +81,18 @@ const TeamRoster = () => {
         </div>
         
         <div className="text-center mb-12 relative">
-          <h2 className="text-4xl font-bold text-foreground mb-4 prison-shadow">Team Roster-u 💪</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 prison-shadow hover:animate-wiggle cursor-pointer">
+            🎭 Team Roster-u (Verified by Fingerprints) 💪
+          </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Namma extraordinary players-a meet pannunga! Ellaarum cricket through redemption find pannirukanga.
-            Oru oru player-um unique skills vachirukanga - adversity and determination-oda forge pannitanga inside bars-la!
+            Namma <em>totally innocent</em> players-a meet pannunga! Ellaarum cricket through <strong>pure luck</strong> and <em>questionable decisions</em> find pannirukanga.
+            Warning: Approach with caution. Side effects include uncontrollable laughter and sudden urge to play cricket badly! 😂
           </p>
-          <div className="mt-4 bg-card border-2 border-border rounded-lg px-4 py-2 inline-block">
-            <span className="text-primary font-bold">MAXIMUM SECURITY CRICKET WARRIORS 🔥</span>
+          <div className="mt-4 bg-card border-2 border-primary rounded-lg px-4 py-2 inline-block animate-pulse">
+            <span className="text-primary font-bold">🏆 MAXIMUM ENTERTAINMENT CRICKET CHAOS 🔥</span>
+          </div>
+          <div className="mt-2 text-sm text-muted-foreground bg-destructive/20 border border-destructive rounded px-3 py-1 inline-block">
+            ⚠️ All stats may be slightly exaggerated for dramatic effect ⚠️
           </div>
         </div>
         

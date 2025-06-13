@@ -51,25 +51,30 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="hover:text-purple-400 transition-all duration-300 hover:scale-110 hover:rotate-2 font-medium relative group border-b-2 border-transparent hover:border-purple-400">
-              Cell Block-u
+            <a href="#home" className="hover:text-purple-400 transition-all duration-300 hover:scale-125 hover:rotate-12 font-medium relative group border-b-2 border-transparent hover:border-purple-400 animate-wiggle">
+              🏠 Cell Block-u (WiFi Passcode: 123456)
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs opacity-0 group-hover:opacity-100 bg-card px-2 py-1 rounded whitespace-nowrap">Click-u pannunga!</span>
             </a>
-            <a href="#team" className="hover:text-pink-400 transition-all duration-300 hover:scale-110 hover:-rotate-2 font-medium relative group border-b-2 border-transparent hover:border-pink-400">
-              Kaidi Maaplai
+            <a href="#team" className="hover:text-pink-400 transition-all duration-300 hover:scale-125 hover:-rotate-12 font-medium relative group border-b-2 border-transparent hover:border-pink-400">
+              👥 Kaidi Gang-u (Very Dangerous)
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs opacity-0 group-hover:opacity-100 bg-card px-2 py-1 rounded whitespace-nowrap">Rowdy-galu!</span>
             </a>
-            <a href="#matches" className="hover:text-cyan-400 transition-all duration-300 hover:scale-110 hover:rotate-2 font-medium relative group border-b-2 border-transparent hover:border-cyan-400">
-              Yard Time-u
+            <a href="#matches" className="hover:text-cyan-400 transition-all duration-300 hover:scale-125 hover:rotate-12 font-medium relative group border-b-2 border-transparent hover:border-cyan-400 hover:animate-bounce">
+              🏏 Yard Time-u (Rain = Cancelled)
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs opacity-0 group-hover:opacity-100 bg-card px-2 py-1 rounded whitespace-nowrap">*Ball missing*</span>
             </a>
-            <a href="#stats" className="hover:text-yellow-400 transition-all duration-300 hover:scale-110 hover:-rotate-2 font-medium relative group border-b-2 border-transparent hover:border-yellow-400">
-              Rap Sheet-u
+            <a href="#stats" className="hover:text-yellow-400 transition-all duration-300 hover:scale-125 hover:-rotate-12 font-medium relative group border-b-2 border-transparent hover:border-yellow-400">
+              📊 Rap Sheet-u (Mostly Fake)
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs opacity-0 group-hover:opacity-100 bg-card px-2 py-1 rounded whitespace-nowrap">Exaggerated-u!</span>
             </a>
-            <a href="#news" className="hover:text-green-400 transition-all duration-300 hover:scale-110 hover:rotate-2 font-medium relative group border-b-2 border-transparent hover:border-green-400">
-              Cell Block News-u
+            <a href="#news" className="hover:text-green-400 transition-all duration-300 hover:scale-125 hover:rotate-12 font-medium relative group border-b-2 border-transparent hover:border-green-400 hover:animate-pulse">
+              📰 Gossip Corner-u (100% True*)
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -top-8 left-1/2 transform -translate-x-1/2 text-xs opacity-0 group-hover:opacity-100 bg-card px-2 py-1 rounded whitespace-nowrap">*Terms apply</span>
             </a>
           </nav>
 
