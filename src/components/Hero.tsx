@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="bg-card/30 backdrop-blur-sm border-2 border-border rounded-lg p-8 mb-8 shadow-2xl hover:shadow-primary/50 transition-all duration-500 hover:scale-105">
             <div className="flex justify-center mb-4">
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-full animate-bounce">
-                <span className="text-sm font-bold">PRISONER #001</span>
+                <span className="text-sm font-bold">KAIDI #786</span>
               </div>
             </div>
             
